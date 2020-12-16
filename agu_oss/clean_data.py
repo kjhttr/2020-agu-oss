@@ -26,7 +26,7 @@ def open_and_clean(url):
     all_cols = temp_df.columns[1:]
 
     # Remove the last row
-    temp_df = temp_df.iloc[:, :-1]
+    temp_df = temp_df.iloc[:, :-1]_______________TEST
 
     # CLEANUP: Drop the commas from the column names & Add a day column
     temp_df.columns = [acol.replace(',', '') for acol in all_cols]
